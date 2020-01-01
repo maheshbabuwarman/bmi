@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath> 
+using namespace std;
+
+int main()
+{
+	double m, h, BMI;
+	cout << "enter your body weight : ";
+	cin >> m;
+	cout << "enter your height: ";
+	cin >> h;
+	BMI = m / (pow(h, 2));
+	if (BMI >= 18.5 && BMI <= 25)
+		cout << "Your BMI is : " << BMI << ": Optimal" << endl;
+	else if (BMI < 18.5)
+		cout << "Your BMI is : " << BMI << ": UnderWeight" << endl;
+	else 
+	cout << "Your BMI is : " << BMI << ": Overweight" << endl;
+
+}
